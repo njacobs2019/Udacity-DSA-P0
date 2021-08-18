@@ -1,0 +1,22 @@
+Task0:
+The worst-case time and space complexity of my solution are both constant.  Extracting and printing a value from an array is O(1) and
+nothing is being stored to memory, so the space complexity is also O(1).
+
+Task1:
+The worst-case time and space complexity of my solution are both O(n).  I iterate over the call and text log exactly once, giving me a time complexity
+proportional to the number of input elements, n.  The worst case space complexity occurs when call/text entry contains two new numbers and the dictionary
+is of size 2*n which simplifies to O(n).
+
+Task2:
+Worst-case space complexity occurs when both phone numbers in all call entries are unique, leading to a dictionary of size 2*n and O(n).
+Worst-case time complexity also occurs when both phone numbers are unique because the dictionary is largest and needs to be traversed along with
+the call log leading to O(2*n+n) which is O(n).
+
+Task3:
+The worst-case space complexity is when each call entry is from Bangalore to a unique number and is O(n).  Traversing the call log to fill the dictionary
+is O(n), casting the dictionary to a list is at most O(n), sorting is O(n*log(n)), and traversing the list to determine the maximum is at most O(n).
+This makes the overall worst-case time complexity O(n*log(n) + 3*n) which simplifies to O(n*log(n)).
+
+Task4:
+The worst-case space complexity is when each call entry is from a unique number leading to O(n).  Worst-case time complexity occurs when each call entry
+is from a unique number and none of the callers received a call.  This leads to O(5*n+n*log(n)) which simplifies to O(n*log(n)).
